@@ -19,7 +19,7 @@ public class EvaluationService {
 	 *@param double
 	 *@return
 	 */
-	public int toMilesPerHour(double kilometersPerHour) {
+	public long toMilesPerHour(double kilometersPerHour) {
 		return 0;
 	}
 	
@@ -42,6 +42,7 @@ public class EvaluationService {
 	public String printConversion(double kilometersPerHour) {
 		return null;
 	}
+	
 	
 	/**
 	 * 2. 	

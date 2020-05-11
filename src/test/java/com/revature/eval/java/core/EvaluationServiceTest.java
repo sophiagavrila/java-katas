@@ -27,6 +27,25 @@ public class EvaluationServiceTest {
 	public ExpectedException expectedException = ExpectedException.none();
 
 	/*******************************************************************
+	 * Question 1)
+	 ******************************************************************/
+	@Test
+	public void testSpeedConverter1() {
+		assertEquals(1, EvaluationService.SpeedConverter.toMilesPerHour(1.5));
+	}
+	
+	@Test
+	public void testSpeedConverter2() {
+		assertEquals(6, EvaluationService.SpeedConverter.toMilesPerHour(10.25));
+	}
+	
+	@Test
+	public void testSpeedConverterInvalid() {
+		assertEquals(-1, EvaluationService.SpeedConverter.toMilesPerHour(-5.6));
+	}
+	
+
+	/*******************************************************************
 	 * Question 1
 	 ******************************************************************/
 	@Test
@@ -248,57 +267,7 @@ public class EvaluationServiceTest {
 		Map<String, Integer> actualWordCount = evaluationService.wordCount("one,\ntwo,\nthree");
 		assertEquals(expectedWordCount, actualWordCount);
 	}
-
-	/*******************************************************************
-	 * Question 7
-	 ******************************************************************/
-	@Test
-	public void findsAValueInTheMiddleOfAnArray() {
-		List<String> sortedList = Collections.unmodifiableList(Arrays.asList("1", "3", "4", "6", "8", "9", "11"));
-
-		EvaluationService.BinarySearch<String> search = new EvaluationService.BinarySearch<>(sortedList);
-
-		assertEquals(3, search.indexOf("6"));
-	}
-
-	@Test
-	public void findsAValueAtTheBeginningOfAnArray() {
-		List<Integer> sortedList = Collections.unmodifiableList(Arrays.asList(1, 3, 4, 6, 8, 9, 11));
-
-		EvaluationService.BinarySearch<Integer> search = new EvaluationService.BinarySearch<>(sortedList);
-
-		assertEquals(0, search.indexOf(1));
-	}
-
-	@Test
-	public void findsAValueAtTheEndOfAnArray() {
-		List<Integer> sortedList = Collections.unmodifiableList(Arrays.asList(1, 3, 4, 6, 8, 9, 11));
-
-		EvaluationService.BinarySearch<Integer> search = new EvaluationService.BinarySearch<>(sortedList);
-
-		assertEquals(6, search.indexOf(11));
-	}
-
-	@Test
-	public void findsAValueInAnArrayOfOddLength() {
-		List<Integer> sortedListOfOddLength = Collections
-				.unmodifiableList(Arrays.asList(1, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 634));
-
-		EvaluationService.BinarySearch<Integer> search = new EvaluationService.BinarySearch<>(sortedListOfOddLength);
-
-		assertEquals(9, search.indexOf(144));
-	}
-
-	@Test
-	public void findsAValueInAnArrayOfEvenLength() {
-		List<Integer> sortedListOfEvenLength = Collections
-				.unmodifiableList(Arrays.asList(1, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377));
-
-		EvaluationService.BinarySearch<Integer> search = new EvaluationService.BinarySearch<>(sortedListOfEvenLength);
-
-		assertEquals(5, search.indexOf(21));
-	}
-
+	
 	/*******************************************************************
 	 * Question 8
 	 ******************************************************************/

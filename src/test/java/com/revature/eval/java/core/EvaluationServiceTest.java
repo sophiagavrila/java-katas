@@ -559,7 +559,6 @@ public class EvaluationServiceTest {
 		int[] set = { 4, 6 };
 		int output = evaluationService.getSumOfMultiples(15, set);
 		assertEquals(30, output);
-
 	}
 
 	@Test
@@ -568,7 +567,6 @@ public class EvaluationServiceTest {
 		int[] set = { 5, 6, 8 };
 		int output = evaluationService.getSumOfMultiples(150, set);
 		assertEquals(4419, output);
-
 	}
 
 	@Test
@@ -577,7 +575,6 @@ public class EvaluationServiceTest {
 		int[] set = { 5, 25 };
 		int output = evaluationService.getSumOfMultiples(51, set);
 		assertEquals(275, output);
-
 	}
 
 	@Test
@@ -586,7 +583,6 @@ public class EvaluationServiceTest {
 		int[] set = { 43, 47 };
 		int output = evaluationService.getSumOfMultiples(10000, set);
 		assertEquals(2203160, output);
-
 	}
 
 	@Test
@@ -595,6 +591,5 @@ public class EvaluationServiceTest {
 		int[] set = { 1 };
 		int output = evaluationService.getSumOfMultiples(100, set);
 		assertEquals(4950, output);
-
 	}
 }

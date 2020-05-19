@@ -610,6 +610,20 @@ public class EvaluationServiceTest {
 		}
 		assertEquals(3, count);	
 	}
+	
+	/*******************************************************************
+	 * Question 22
+	 ******************************************************************/
+	@Test
+	public void testGuessingGame() {
+		int n = evaluationService.guessingGame(1, 10);
+		boolean result = true;
+		if(n < 1 || n > 10) {
+			result = false;
+		}
+		assertEquals(true, result);
+	}
+	
 }
 
 

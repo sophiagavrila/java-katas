@@ -451,4 +451,17 @@ public class EvaluationService {
 	public int getSumOfMultiples(int i, int[] set) {
 		return 0;
 	}
+	
+	/**
+	 * 21. Three Magic Numbers
+	 * 
+	 * You work at a casino in Las Vegas.  Your job is to program a slot machine to
+	 * return 3 random numbers using the Math.random class.
+	 * 
+	 * Write a method to return an int array of 3 random numbers.
+	 */
+	
+	public int[] threeLuckyNumbers() {
+		return null;
+	}
 }

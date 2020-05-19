@@ -592,4 +592,24 @@ public class EvaluationServiceTest {
 		int output = evaluationService.getSumOfMultiples(100, set);
 		assertEquals(4950, output);
 	}
+	
+	
+	/*******************************************************************
+	 * Question 21
+	 ******************************************************************/
+	@Test
+	public void testThreeLuckyNumbers() {
+		int[] arr = evaluationService.threeLuckyNumbers();
+		int count = 0;
+		for(int i : arr) {
+			if(i > 0 && i <= 100) {
+				count++;
+			} else {
+				break;
+			}
+		}
+		assertEquals(3, count);	
+	}
 }
+
+

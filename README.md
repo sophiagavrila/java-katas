@@ -3,7 +3,7 @@
 ## Description
 
 Revature is building a new API! This API contains methods for validating data, 
-solving problems, and encoding data. The API consists of 20 methods that you 
+solving problems, and encoding data. The API consists of 22 methods that you 
 must implement:
 
 ## Requirements
@@ -21,11 +21,8 @@ Next, open the project with your preferred text editor or IDE and complete the a
 
 ```
 	git add .
-	git commit -m “Assignment Completed”
+	git commit -m “completed question #X”
 	git push
 ```
 
-Be sure not to alter the folder structure, configuration files, or unit tests of the assignment unless specifically told to do so by your trainer. Be aware of any deadlines set by the trainer, and push your code beforehand.
-
-<br/><br/><br/>
-&copy; 2017 Revature. All rights reserved.
+Be sure not to alter the folder structure, configuration files, or unit tests of the assignment unless specifically told to do so by your trainer.
